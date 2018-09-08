@@ -2,8 +2,8 @@ void quick_sort(int a[], int l, int r)
 {
 	if(l < r)
 	{
-		//int q = lombutoPartition(a, l, r);
-		int q = hoarePartition(a, l, r);
+		int q = lombutoPartition(a, l, r);
+		//int q = hoarePartition(a, l, r);
 		quick_sort(a, l, q-1);
 		quick_sort(a, q+1, r);
 	}
